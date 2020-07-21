@@ -1,0 +1,59 @@
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.contentBoxLeft,
+.contentBoxRight {
+  margin: 2.5%;
+}
+
+.contentBoxLeft img{
+  width: 45%;
+  height: auto;
+  float: left;
+  margin-right: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+.contentBoxRight img{
+  width: 50%;
+  height: auto;
+  float: right;
+  margin-left: 2.5%;
+  margin-bottom: 2.25%;
+}
+
+.contentBoxRight p,
+.contentBoxRight h1 {
+  text-align: right;
+}
+
+.contentBoxRight p,
+.contentBoxLeft p {
+  font-size: 2.5vw;
+}
+
+.loadBtn {
+  padding: 20px;
+  background-color: coral;
+}
+
+.loadBtn:hover {
+  background-color: orange;
+}
+
+@media screen and (min-width: 700px) {
+  .contentBoxLeft img,
+  .contentBoxRight img {
+    max-width: 500px;
+  }
+
+  .contentBoxRight p,
+  .contentBoxLeft p {
+    font-size: 1.25em;
+  }
+
+}

@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+}
+
+.topBar .linkBar, footer {
+  background-color: rgb(50, 50, 50);
+}
+
+
+.linkTabs {
+  list-style-type: none;
+  margin: 0;
+  margin-left: 20%;
+}
+
+.linkbtn{
+  display: block;
+  width: 60%;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 5vw;
+  color: white;
+  font-style: none;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.linkbtn:hover {
+  background-color: rgb(150, 150, 150);
+}
+
+.logoBar {
+  background-color: coral;
+  max-height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#barLogo {
+  width: 30%;
+  max-width: 200px;
+  height: auto;
+
+  margin-left: 5%;
+}
+
+input {
+  height: 75px;
+  max-height: 100px;
+  align-self: center;
+  margin-right: 5%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5%;
+}
+
+#socialMedia img {
+  width: 125px;
+  height: auto;
+  margin: 5%;
+}
+
+.footerHeading {
+  color: white;
+  font-size: 4vw;
+}
+
+#services .footerHeading{
+  margin-bottom: 5%;
+}
+
+#services a,
+#contactInfo p{
+  color: white;
+  font-size: 3.0vw;
+  text-align: left;
+}
+
+@media screen and (min-width: 700px) {
+  .linkTabs {
+    list-style-type: none;
+    margin: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .linkbtn {
+    text-decoration: none;
+    font-size: 1.5em;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .logoBar {
+    background-color: coral;
+    max-height: 150px;
+  }
+
+  #barLogo {
+    width: 150px;
+    height: auto;
+
+    margin-left: 50px;
+  }
+
+  input {
+    height: 100%;
+    max-height: 100px;
+    align-self: center;
+    margin-right: 50px;
+  }
+
+  footer {
+    flex-direction: row;
+  }
+
+
+  #socialMedia img {
+    width: 50px;
+    height: auto;
+    margin: 0;
+  }
+
+  .footerSection {
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .footerHeading {
+    color: white;
+    font-size: 2em;
+  }  
+
+  #services a,
+  #contactInfo p{
+    font-size: 1.5em;
+  }
+}

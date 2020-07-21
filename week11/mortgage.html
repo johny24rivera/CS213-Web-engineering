@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mortgage Calculator</title>
+  <link rel="stylesheet" href="MortgageCalculator.css" type="text/css"/>
+</head>
+<body>
+  <form action="mortgage.php" id="calcForm" method="GET">
+    APR: <input type="text" id="apr" name="apr" onblur="validateAPR()" />
+    <p id="aprError" class="error"></p>
+    Loan Term: <input type="text" name="term" id="term" onblur="validateTerm()" />
+    <p id="termError" class="error"></p>
+    Loan Amount: <input type="text" name="amount" id="amount" onblur="validateAmount()" />
+    <p id="amountError" class="error"></p>
+    Monthly Payment: <p id="payment"></p>
+    <button type="reset" id="clear">Clear Form</button>
+    <button type="submit" id="calculate">Submit</button>
+  </form>
+  <script src="mortgageCalculator.js"></script>
+</body>
+
+</html>

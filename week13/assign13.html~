@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="assign13.js"></script>
+  <link rel="stylesheet" href="assign13.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab&display=swap" rel="stylesheet">
+  <title>Register Piano Students</title>
+</head>
+<body onLoad="eventListeners();">
+  <h1>Piano Register Form</h1>
+  <div id="Content">
+    <form name="studentForm" id="studentForm"In PHP the number of actual parameters in a call to a function need not match the number of formal parameters defined in that function.>
+      <div class="formElement">
+        <h2>Performance Type:</h2>
+        <select name="performance">
+          <option value="">------------------</option>
+          <option value="solo">solo</option>
+          <option value="duet">duet</option>
+          <option value="concerto">concerto</option>
+        </select>
+        <p class="errorMessage"></p>
+      </div>
+      <div class="formElement">
+        <h2>First Name:</h2>
+        <input type="text" name="first_name" id="fname">
+        <p class="errorMessage"></p>
+      </div>
+      <div class="formElement">
+        <h2>Last Name:</h2>
+        <input type="text" name="last_name" id="lname">
+        <p class="errorMessage"></p>
+      </div>
+      <div class="formElement">
+        <h2>Student ID Number:</h2>
+        <input type="text" name="student_id" id="ID">
+        <p class="errorMessage"></p>
+      </div>
+      <div class="formElement" id="secondPerson">
+        <div class="formElement">
+          <h2>First Name of 2nd Person:</h2>
+          <input type="text" name="first_name_2" id="fname2">
+          <p class="errorMessage"></p>
+        </div>
+        <div class="formElement">
+          <h2>Last Name of 2nd Person:</h2>
+          <input type="text" name="last_name_2" id="lname2">
+          <p class="errorMessage"></p>
+        </div>
+        <div class="formElement">
+          <h2>Student ID of 2nd Person:</h2>
+          <input type="text" name="student_id_2" id="ID2">
+          <p class="errorMessage"></p>
+        </div>
+      </div>
+      <div class="formElement">
+        <h2>Skill Level:</h2>
+        <select name="skill">
+          <option value="">------------------</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="pre-advanced">Pre-Advanced</option>
+          <option value="advanced">Advanced</option>
+        </select>
+        <p class="errorMessage"></p>
+      </div>
+      <!--Instrument is needed-->
+      <div class="formElement">
+        <h2>Instruments</h2>
+        <select name="instrument">
+          <option value="">------------------</option>
+          <option value="piano">Piano</option>
+          <option value="voice">Voice</option>
+          <option value="organ">Organ</option>
+          <option value="other">Other</option>
+        </select>
+        <p class="errorMessage"></p>
+      </div>
+      <div class="formElement">
+        <h2>Location:</h2>
+        <select name="location">
+          <option value="">------------------</option>
+          <option value="Snow">Snow</option>
+          <option value="Spori">Spori</option>
+          <option value="MC">Manwaring Center</option>
+          <option value="Hart">Hart</option>
+          <option value="Hinckley">Hinckley</option>
+        </select>
+        <p class="errorMessage"></p>
+      </div>
+      <div class="formElement">
+        <h2>Room Number:</h2>
+        <select name="room">
+          <option value="">------------------</option>
+          <option value="110">110</option>
+          <option value="124">124</option>
+          <option value="152">152</option>
+          <option value="213">213</option>
+          <option value="265">265</option>
+        </select>
+        <p class="errorMessage"></p>
+      </div>
+      <div class="formElement">
+        <h2>Time Slot:</h2>
+        <select name="time_slot">
+          <option value="">------------------</option>
+          <option value="9:00 AM">9:00 AM</option>
+          <option value="9:30 AM">9:30 AM</option>
+          <option value="10:00 AM">10:00 AM</option>
+          <option value="10:30 AM">10:30 AM</option>
+          <option value="11:00 AM">11:00 AM</option>
+          <option value="11:30 AM">11:30 AM</option>
+          <option value="12:00 PM">12:00 PM</option>
+        </select>
+        <p class="errorMessage"></p>
+      </div>
+      <div class="formElement" id="buttons">
+        <input type="submit" value="Register" class="btn">
+        <input type="reset" value="Reset" class="btn">
+      </div>
+    </form>
+    <section id="displayWait">
+      <h2 id="listHeader">Sign Up List</h2>
+      <div class="prevSignedUp">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit, sed do eiusmod
+          tempor incididunt ut<br> labore et dolore magna aliqua. Utenim ad minim 
+          veniam, quis nostrud exercitation<br> ullamco laboris nisi ut aliquip ex ea 
+          commodo consequat. Duis<br> aute irure dolor in reprehenderit in voluptate 
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+          est laborum.</p>
+      </div>
+      <div class="prevSignedUp">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit, sed do eiusmod
+          tempor incididunt ut<br> labore et dolore magna aliqua. Utenim ad minim 
+          veniam, quis nostrud exercitation<br> ullamco laboris nisi ut aliquip ex ea 
+          commodo consequat. Duis<br> aute irure dolor in reprehenderit in voluptate 
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+          est laborum.</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

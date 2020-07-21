@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mortgage Calculator</title>
+    <script src="mortgageCalculator.js"></script>
+    <link rel="stylesheet" href="MortgageCalculator.css" type="text/css" />
+  </head>
+  <body>
+    <form action="" id="calcForm" method="GET">
+      APR: <input type="text" id="apr" onblur="validateAPR()"/> 
+      <p id="aprError" class="error"></p>
+      Loan Term: <input type="text" id="term" onblur="validateTerm()"/>
+      <p id="termError" class="error"></p>
+      Loan Amount: <input type="text" id="amount" onblur="validateAmount()"/>
+      <p id="amountError" class="error"></p>
+      Monthly Payment: <p id="payment"></p>
+      <button type="reset" id="clear">Clear Form</button>
+      <button type="button" id="calculate" onclick="calculateMortgage(
+        document.getElementById('apr').value,
+        document.getElementById('term').value,
+        document.getElementById('amount').value
+      )">Calculate Payment</button>
+    </form>
+  </body>
+</html>

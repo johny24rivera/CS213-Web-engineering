@@ -1,0 +1,14 @@
+#calcForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error {
+  margin-bottom: 5%;
+  color: red;
+}
+
+#calcform button {
+  width: 30px;
+}

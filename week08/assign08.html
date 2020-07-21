@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Form Validation</title>
+  <script src="assign08.js"></script>
+  <link rel="stylesheet" href="assign08.css" type="text/css" />
+</head>
+<body onLoad="eventListeners();">
+  <section id="header">
+    <img src="logo-ex.png" alt="logo">
+    <h1>GoldCode Inc.</h1>
+    <input type="text">
+  </section>
+  <form action="" id="form" method="GET">
+    <div class="formElement">
+      <p class="label">First Name:</p>
+      <input type="text" name="first_name" required>
+      <p class="errorMessage">Error: invalid Name Ex. John</p>
+    </div>
+    <div class="formElement">
+      <p class="label">Last Name:</p>
+      <input type="text" name="last_name" required>
+      <p class="errorMessage">Error: invalid Name Ex. Smith</p>
+    </div>
+    <div class="formElement">
+      <p class="label">Address:</p>
+      <input type="text" name="address" required>
+      <p class="errorMessage">Error: Invalid Address Ex. 1111 streetname st. city name ST</p>
+    </div>
+    <div class="formElement">
+      <p class="label">Phone Number:</p>
+      <input type="text" name="phone" required>
+      <p class="errorMessage">Error: Invalid Phone Number Ex. 555-555-5555</p>
+    </div>
+    <table>
+      <tr>
+        <td></td>
+        <td>Services</td>
+        <td>Price</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="item_0" value="50.00"></td>
+        <td>Thermal Repasting</td>
+        <td>$50.00</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="item_1" value="30.00"></td>
+        <td>RAM Installation</td>
+        <td>$30.00</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="item_2" value="25.00"></td>
+        <td>Hard Drive / Solid State Drive Installation</td>
+        <td>$25.00</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="item_3" value="70.00"></td>
+        <td>Computer Cleaning</td>
+        <td>$70.00</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Subtotal</td>
+        <td><output name="total"></output></td>
+      </tr>
+    </table>
+    <!--This is where we add the checkbox-->
+    <!--Credit Card radio button-->
+    <section id="cardType">
+      <p class="label">Credit Card Type:</p>
+      <input type="radio" name="card">VISA
+      <input type="radio" name="card">MasterCard
+      <input type="radio" name="card">American Express
+    </section>
+    <div class="formElement">
+      <p class="label">Credit Card Number:</p>
+      <input type="text" name="credit_card" required>
+      <p class="errorMessage">Error: Inavlid Credit Card Number Ex. 1111 2222 3333 4444</p>
+    </div>
+    <div class="formElement">
+      <p class="label">Expiration Date:</p>
+      <input type="text" name="exp_date" required>
+      <p class="errorMessage"></p>
+    </div>
+    <button type="reset" name="reset">reset</button>
+    <p class="errorMessage"></p>
+    <button type="submit" name="validate">submit</button>
+  </form>
+</body>
+</html>

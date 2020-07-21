@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="assign09.js"></script>
+  <link rel="stylesheet" href="assign09.css" type="text/css" />
+  <title>AJAX</title>
+  <link href="https://fonts.googleapis.com/css?family=Calistoga%7CLato&display=swap" rel="stylesheet">
+</head>
+<body onLoad="eventListener();">
+  
+  <section id="part1">
+    <h1>Part 1: Countries Highest Populated Cities</h1>
+    <div class="content">
+      <form id="countrySelect">
+       <div><input type="radio" name="rad" value="usa" id="US">United States</div>
+        <div><input type="radio" name="rad" value="mexico" id="MX">Mexico</div>
+       <div><input type="radio" name="rad" value="canada" id="CA">Canada</div>
+        <div><input type="radio" name="rad" value="russia" id="RU">Russia</div>
+      </form>
+      <div id="countryInfo"></div>
+    </div>
+  </section>
+  <section id="part2">
+    <h1>Part 2: Student Information</h1>
+    <div>
+      <form id="studentInfo">
+        <input type="text" id="studentInput" value="json.txt">
+        <button type="button" id="studentBtn">Enter</button>
+      </form>
+    </div>
+    <div id="studentView"></div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="assign10.js"></script>
+    <link rel="stylesheet" href="assign10.css" type="text/css" />
+    <title>Mileage Calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=Bitter%7CLato&display=swap" rel="stylesheet">  </head>
+  <body onLoad="eventListener();">
+    <heading>Mileage Calculator</heading>
+    <section id="dataInputs">
+      <h1>Starting City:</h1>
+      <input type="text" name="startCity">
+      <p class="errorMessage"></p>
+      <h1>Starting State:</h1>
+      <input type="text" name="startState">
+      <p class="errorMessage"></p>
+      <h1>Ending City:</h1>
+      <input type="text" name="endCity">
+      <p class="errorMessage"></p>
+      <h1>Ending State</h1>
+      <input type="text" name="endState">
+      <p class="errorMessage"></p>
+      <button type="button" id="inputBtn">Enter</button>
+      <button type="reset" id="resetBtn">Reset</button>
+    </section>
+    <div id="distanceText"></div>
+  </body>
+</html>

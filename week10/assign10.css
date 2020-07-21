@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Bitter', serif;
+  font-size: 1.25em;  
+}
+
+heading {
+  font-family: 'Bitter', serif;
+  font-size: 1.5em;
+}
+
+.errorMessage {
+  font-family: 'Lato', sans-serif;
+  color: red;
+}
+
+#inputBtn {
+    font-family: 'Lato', sans-serif;
+}
